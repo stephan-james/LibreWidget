@@ -1,0 +1,14 @@
+"product.name" = "LibreWidget";
+"disclaimer" = "**Nicht für Behandlungsentscheidungen.**\\\n\\\nDie in dieser App und ihren Erweiterungen dargestellten Informationen dürfen nicht für Behandlungs- oder Dosierungsentscheidungen verwendet werden. Nutzen Sie das Blutzuckermesssystem und/oder wenden Sie sich an medizinisches Fachpersonal.";
+"credentials.header" = "Zugangsdaten";
+"credentials.footer" = "Geben Sie die Zugangsdaten zu Ihrem [LibreView-Account](https://www.libreview.com/) oder Ihrem [LibreLinkUp-Account](https://www.librelinkup.com/) ein und drücken Sie den Verbinden-Button";
+"username.label" = "Benutzername (E-Mail Aresse)";
+"username.placeholder" = "Benutzername";
+"password.label" = "Passwort";
+"password.placeholder" = "Passwort";
+"connect" = "Verbinden";
+"connection.connected" = "Verbunden.";
+"connection.connecting" = "Verbindungsaufbau...";
+"connection.disconnected" = "Noch nicht verbunden.";
+"connection.failed" = "Verbindung fehlgeschlagen.";
+"connection.locked" = "Zugriff temporär gesperrt.";

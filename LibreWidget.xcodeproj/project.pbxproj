@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0CD983290F24BD00CADD69 /* LibreWidgetSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A123D2D290F20C500F36374 /* LibreWidgetSetupView.swift */; };
+		1A0CD986290F328E00CADD69 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CD985290F328E00CADD69 /* Configuration.swift */; };
+		1A43EE812912E88900505558 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A43EE832912E88900505558 /* Localizable.strings */; };
+		1AA70D49291035430072D119 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CD985290F328E00CADD69 /* Configuration.swift */; };
+		1AA70D4B291067640072D119 /* LibreViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4A291067640072D119 /* LibreViewAPI.swift */; };
+		1AA70D4C291067640072D119 /* LibreViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4A291067640072D119 /* LibreViewAPI.swift */; };
+		1AA70D4E291067C50072D119 /* GlucoseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4D291067C50072D119 /* GlucoseEntry.swift */; };
+		1AA70D50291072DC0072D119 /* CommonsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4F291072DC0072D119 /* CommonsUI.swift */; };
+		1AA70D51291072DC0072D119 /* CommonsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4F291072DC0072D119 /* CommonsUI.swift */; };
+		1AAEBEFF290E7B63001068B2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAEBEFE290E7B62001068B2 /* WidgetKit.framework */; };
+		1AAEBF01290E7B63001068B2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAEBF00290E7B63001068B2 /* SwiftUI.framework */; };
+		1AAEBF04290E7B63001068B2 /* LibreGlucoseWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBF03290E7B63001068B2 /* LibreGlucoseWidget.swift */; };
+		1AAEBF07290E7B64001068B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAEBF06290E7B64001068B2 /* Assets.xcassets */; };
+		1AAEBF09290E7B64001068B2 /* LibreGlucoseWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBF05290E7B63001068B2 /* LibreGlucoseWidget.intentdefinition */; };
+		1AAEBF0A290E7B64001068B2 /* LibreGlucoseWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1AAEBF05290E7B63001068B2 /* LibreGlucoseWidget.intentdefinition */; };
+		1AAEBF0D290E7B64001068B2 /* LibreGlucoseWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1AAEBEFC290E7B62001068B2 /* LibreGlucoseWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1ACD511729114F91000DFEE5 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD511629114F91000DFEE5 /* Commons.swift */; };
+		1ACD511829114F91000DFEE5 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD511629114F91000DFEE5 /* Commons.swift */; };
+		1ACD511C291155B3000DFEE5 /* Brygada1918-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ACD511A291155B3000DFEE5 /* Brygada1918-Italic-VariableFont_wght.ttf */; };
+		1ACD511D291155B3000DFEE5 /* Brygada1918-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ACD511B291155B3000DFEE5 /* Brygada1918-VariableFont_wght.ttf */; };
+		603791D83DDA6FC1E413C54E /* LibreWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037963A4C91319AA20D0D0C /* LibreWidgetTests.swift */; };
+		603795AD477D903D6DB02C4C /* LibreWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60379CA6D6C1A21D93A294CF /* LibreWidgetApp.swift */; };
+		6037963951D1938C481BC00D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60379A1C52EDB40620493E12 /* Preview Assets.xcassets */; };
+		603799227640E5A10B4DD407 /* LibreWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603797CD002C11AC46FD1E24 /* LibreWidgetUITests.swift */; };
+		60379A1A306958A6214015EB /* Toggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60379C7F64077E0CF567850C /* Toggles.swift */; };
+		60379B96685F2B0ADE7D6EC3 /* Toggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60379C7F64077E0CF567850C /* Toggles.swift */; };
+		60379CDEE5ADF0D8473665C6 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60379CC26ECE138C19B0C7BA /* Strings.swift */; };
+		60379D966F99C9E47F8BA842 /* LibreWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60379B56D3AF213B9416423C /* LibreWidgetUITestsLaunchTests.swift */; };
+		60379E81883591F908323F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60379F7810A23AC530DC9850 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AAEBF0B290E7B64001068B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60379C49143A04A4D5249524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AAEBEFB290E7B62001068B2;
+			remoteInfo = LibreGlucoseWidgetExtension;
+		};
+		603798A29C24721AC7C3D421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60379C49143A04A4D5249524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 603799D0E71F49E3B3B68AF8;
+			remoteInfo = LibreWidget;
+		};
+		60379D4A8500A5B51EB6F7A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60379C49143A04A4D5249524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 603799D0E71F49E3B3B68AF8;
+			remoteInfo = LibreWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1AAEBF11290E7B64001068B2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1AAEBF0D290E7B64001068B2 /* LibreGlucoseWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A0CD985290F328E00CADD69 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		1A0CD987290F353B00CADD69 /* LibreWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LibreWidget.entitlements; sourceTree = "<group>"; };
+		1A0CD988290F35B400CADD69 /* LibreGlucoseWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LibreGlucoseWidgetExtension.entitlements; sourceTree = "<group>"; };
+		1A123D2D290F20C500F36374 /* LibreWidgetSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LibreWidgetSetupView.swift; path = LibreWidget/LibreWidgetSetupView.swift; sourceTree = SOURCE_ROOT; };
+		1A264E40290C655100520490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A43EE822912E88900505558 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A43EE842912E89100505558 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1AA70D4A291067640072D119 /* LibreViewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibreViewAPI.swift; sourceTree = "<group>"; };
+		1AA70D4D291067C50072D119 /* GlucoseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseEntry.swift; sourceTree = "<group>"; };
+		1AA70D4F291072DC0072D119 /* CommonsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonsUI.swift; sourceTree = "<group>"; };
+		1AAEBEFC290E7B62001068B2 /* LibreGlucoseWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LibreGlucoseWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAEBEFE290E7B62001068B2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1AAEBF00290E7B63001068B2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1AAEBF03290E7B63001068B2 /* LibreGlucoseWidget.swift */ = {isa = PBXFileReference; indentWidth = 1; lastKnownFileType = sourcecode.swift; path = LibreGlucoseWidget.swift; sourceTree = "<group>"; tabWidth = 1; wrapsLines = 1; };
+		1AAEBF05290E7B63001068B2 /* LibreGlucoseWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LibreGlucoseWidget.intentdefinition; sourceTree = "<group>"; };
+		1AAEBF06290E7B64001068B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AAEBF08290E7B64001068B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ACD511629114F91000DFEE5 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		1ACD511A291155B3000DFEE5 /* Brygada1918-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Brygada1918-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		1ACD511B291155B3000DFEE5 /* Brygada1918-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Brygada1918-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		6037963A4C91319AA20D0D0C /* LibreWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibreWidgetTests.swift; sourceTree = "<group>"; };
+		6037963FEF86E2DA37F97364 /* LibreWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibreWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		603797CD002C11AC46FD1E24 /* LibreWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibreWidgetUITests.swift; sourceTree = "<group>"; };
+		60379A1C52EDB40620493E12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60379B56D3AF213B9416423C /* LibreWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibreWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		60379C7F64077E0CF567850C /* Toggles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toggles.swift; sourceTree = "<group>"; };
+		60379CA6D6C1A21D93A294CF /* LibreWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibreWidgetApp.swift; sourceTree = "<group>"; };
+		60379CBB8919B0F021349625 /* LibreWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibreWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60379CC26ECE138C19B0C7BA /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		60379F25CCB4C14E6E90569F /* LibreWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibreWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60379F7810A23AC530DC9850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AAEBEF9290E7B62001068B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAEBF01290E7B63001068B2 /* SwiftUI.framework in Frameworks */,
+				1AAEBEFF290E7B63001068B2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6037920115E88353C0A9F875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60379B760629DB7F50964182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60379BE68C7670E64F16BE02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0CD984290F326700CADD69 /* LibreShared */ = {
+			isa = PBXGroup;
+			children = (
+				1A0CD985290F328E00CADD69 /* Configuration.swift */,
+				1AA70D4A291067640072D119 /* LibreViewAPI.swift */,
+				1AA70D4F291072DC0072D119 /* CommonsUI.swift */,
+				1ACD511629114F91000DFEE5 /* Commons.swift */,
+				60379C7F64077E0CF567850C /* Toggles.swift */,
+			);
+			path = LibreShared;
+			sourceTree = "<group>";
+		};
+		1AAEBEFD290E7B62001068B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AAEBEFE290E7B62001068B2 /* WidgetKit.framework */,
+				1AAEBF00290E7B63001068B2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AAEBF02290E7B63001068B2 /* LibreGlucoseWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1AA70D4D291067C50072D119 /* GlucoseEntry.swift */,
+				1AAEBF03290E7B63001068B2 /* LibreGlucoseWidget.swift */,
+				1AAEBF05290E7B63001068B2 /* LibreGlucoseWidget.intentdefinition */,
+				1AAEBF06290E7B64001068B2 /* Assets.xcassets */,
+				1AAEBF08290E7B64001068B2 /* Info.plist */,
+			);
+			path = LibreGlucoseWidget;
+			sourceTree = "<group>";
+		};
+		1ACD511929115582000DFEE5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1ACD511A291155B3000DFEE5 /* Brygada1918-Italic-VariableFont_wght.ttf */,
+				1ACD511B291155B3000DFEE5 /* Brygada1918-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		60379A724401F5D16D8979C5 /* LibreWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				6037963A4C91319AA20D0D0C /* LibreWidgetTests.swift */,
+			);
+			path = LibreWidgetTests;
+			sourceTree = "<group>";
+		};
+		60379ACF802D19E322B0B4A9 = {
+			isa = PBXGroup;
+			children = (
+				1A0CD988290F35B400CADD69 /* LibreGlucoseWidgetExtension.entitlements */,
+				1A0CD984290F326700CADD69 /* LibreShared */,
+				1AAEBF02290E7B63001068B2 /* LibreGlucoseWidget */,
+				60379CCE0DD1760158C56E10 /* LibreWidget */,
+				60379A724401F5D16D8979C5 /* LibreWidgetTests */,
+				60379C7EADF9B98469ABEC3D /* LibreWidgetUITests */,
+				1AAEBEFD290E7B62001068B2 /* Frameworks */,
+				60379EC30306D0C4B6D1430A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60379BB0A1B16AC86A347BAF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				60379A1C52EDB40620493E12 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60379C7EADF9B98469ABEC3D /* LibreWidgetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				603797CD002C11AC46FD1E24 /* LibreWidgetUITests.swift */,
+				60379B56D3AF213B9416423C /* LibreWidgetUITestsLaunchTests.swift */,
+			);
+			path = LibreWidgetUITests;
+			sourceTree = "<group>";
+		};
+		60379CCE0DD1760158C56E10 /* LibreWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1ACD511929115582000DFEE5 /* Fonts */,
+				1A0CD987290F353B00CADD69 /* LibreWidget.entitlements */,
+				1A264E40290C655100520490 /* Info.plist */,
+				60379F7810A23AC530DC9850 /* Assets.xcassets */,
+				60379BB0A1B16AC86A347BAF /* Preview Content */,
+				60379CA6D6C1A21D93A294CF /* LibreWidgetApp.swift */,
+				1A123D2D290F20C500F36374 /* LibreWidgetSetupView.swift */,
+				60379CC26ECE138C19B0C7BA /* Strings.swift */,
+				1A43EE832912E88900505558 /* Localizable.strings */,
+			);
+			path = LibreWidget;
+			sourceTree = "<group>";
+		};
+		60379EC30306D0C4B6D1430A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60379F25CCB4C14E6E90569F /* LibreWidget.app */,
+				6037963FEF86E2DA37F97364 /* LibreWidgetTests.xctest */,
+				60379CBB8919B0F021349625 /* LibreWidgetUITests.xctest */,
+				1AAEBEFC290E7B62001068B2 /* LibreGlucoseWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AAEBEFB290E7B62001068B2 /* LibreGlucoseWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAEBF0E290E7B64001068B2 /* Build configuration list for PBXNativeTarget "LibreGlucoseWidgetExtension" */;
+			buildPhases = (
+				1AAEBEF8290E7B62001068B2 /* Sources */,
+				1AAEBEF9290E7B62001068B2 /* Frameworks */,
+				1AAEBEFA290E7B62001068B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibreGlucoseWidgetExtension;
+			productName = LibreGlucoseWidgetExtension;
+			productReference = 1AAEBEFC290E7B62001068B2 /* LibreGlucoseWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		603799D0E71F49E3B3B68AF8 /* LibreWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60379F6578F0E4DD4EA9192B /* Build configuration list for PBXNativeTarget "LibreWidget" */;
+			buildPhases = (
+				60379A7BF6FE4663A004CC7B /* Sources */,
+				60379BE68C7670E64F16BE02 /* Frameworks */,
+				60379D3DE933A8493B597955 /* Resources */,
+				1AAEBF11290E7B64001068B2 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AAEBF0C290E7B64001068B2 /* PBXTargetDependency */,
+			);
+			name = LibreWidget;
+			productName = LibreWidget;
+			productReference = 60379F25CCB4C14E6E90569F /* LibreWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60379C161ABB33735213163B /* LibreWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60379BE8D22A34B90A95EC7D /* Build configuration list for PBXNativeTarget "LibreWidgetTests" */;
+			buildPhases = (
+				603799428B2C0B1DB68E004A /* Sources */,
+				6037920115E88353C0A9F875 /* Frameworks */,
+				60379C828406FFF0B2949779 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60379D577D8BF67B2C684EC3 /* PBXTargetDependency */,
+			);
+			name = LibreWidgetTests;
+			productName = LibreWidgetTests;
+			productReference = 6037963FEF86E2DA37F97364 /* LibreWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		60379CA9B446562D3C2F62D4 /* LibreWidgetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6037955FA1C3AE524CE0210C /* Build configuration list for PBXNativeTarget "LibreWidgetUITests" */;
+			buildPhases = (
+				6037944F02188AE99E508E76 /* Sources */,
+				60379B760629DB7F50964182 /* Frameworks */,
+				603794A3F5AF3AE768ED9559 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60379945A2AF132BBFC3994F /* PBXTargetDependency */,
+			);
+			name = LibreWidgetUITests;
+			productName = LibreWidgetUITests;
+			productReference = 60379CBB8919B0F021349625 /* LibreWidgetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60379C49143A04A4D5249524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					1AAEBEFB290E7B62001068B2 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 60379B8663C92E813BB9A6A1 /* Build configuration list for PBXProject "LibreWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				de,
+				Base,
+			);
+			mainGroup = 60379ACF802D19E322B0B4A9;
+			productRefGroup = 60379EC30306D0C4B6D1430A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				603799D0E71F49E3B3B68AF8 /* LibreWidget */,
+				60379C161ABB33735213163B /* LibreWidgetTests */,
+				60379CA9B446562D3C2F62D4 /* LibreWidgetUITests */,
+				1AAEBEFB290E7B62001068B2 /* LibreGlucoseWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AAEBEFA290E7B62001068B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAEBF07290E7B64001068B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		603794A3F5AF3AE768ED9559 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60379C828406FFF0B2949779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60379D3DE933A8493B597955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A43EE812912E88900505558 /* Localizable.strings in Resources */,
+				1ACD511C291155B3000DFEE5 /* Brygada1918-Italic-VariableFont_wght.ttf in Resources */,
+				60379E81883591F908323F6B /* Assets.xcassets in Resources */,
+				6037963951D1938C481BC00D /* Preview Assets.xcassets in Resources */,
+				1ACD511D291155B3000DFEE5 /* Brygada1918-VariableFont_wght.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AAEBEF8290E7B62001068B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ACD511829114F91000DFEE5 /* Commons.swift in Sources */,
+				1AA70D4C291067640072D119 /* LibreViewAPI.swift in Sources */,
+				1AAEBF09290E7B64001068B2 /* LibreGlucoseWidget.intentdefinition in Sources */,
+				1AA70D4E291067C50072D119 /* GlucoseEntry.swift in Sources */,
+				1AAEBF04290E7B63001068B2 /* LibreGlucoseWidget.swift in Sources */,
+				1AA70D51291072DC0072D119 /* CommonsUI.swift in Sources */,
+				1AA70D49291035430072D119 /* Configuration.swift in Sources */,
+				60379B96685F2B0ADE7D6EC3 /* Toggles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6037944F02188AE99E508E76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				603799227640E5A10B4DD407 /* LibreWidgetUITests.swift in Sources */,
+				60379D966F99C9E47F8BA842 /* LibreWidgetUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		603799428B2C0B1DB68E004A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				603791D83DDA6FC1E413C54E /* LibreWidgetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60379A7BF6FE4663A004CC7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ACD511729114F91000DFEE5 /* Commons.swift in Sources */,
+				1A0CD986290F328E00CADD69 /* Configuration.swift in Sources */,
+				1A0CD983290F24BD00CADD69 /* LibreWidgetSetupView.swift in Sources */,
+				1AAEBF0A290E7B64001068B2 /* LibreGlucoseWidget.intentdefinition in Sources */,
+				1AA70D4B291067640072D119 /* LibreViewAPI.swift in Sources */,
+				1AA70D50291072DC0072D119 /* CommonsUI.swift in Sources */,
+				603795AD477D903D6DB02C4C /* LibreWidgetApp.swift in Sources */,
+				60379CDEE5ADF0D8473665C6 /* Strings.swift in Sources */,
+				60379A1A306958A6214015EB /* Toggles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AAEBF0C290E7B64001068B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AAEBEFB290E7B62001068B2 /* LibreGlucoseWidgetExtension */;
+			targetProxy = 1AAEBF0B290E7B64001068B2 /* PBXContainerItemProxy */;
+		};
+		60379945A2AF132BBFC3994F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 603799D0E71F49E3B3B68AF8 /* LibreWidget */;
+			targetProxy = 60379D4A8500A5B51EB6F7A4 /* PBXContainerItemProxy */;
+		};
+		60379D577D8BF67B2C684EC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 603799D0E71F49E3B3B68AF8 /* LibreWidget */;
+			targetProxy = 603798A29C24721AC7C3D421 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A43EE832912E88900505558 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A43EE822912E88900505558 /* English */,
+				1A43EE842912E89100505558 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AAEBF0F290E7B64001068B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LibreGlucoseWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9APWNBUWJA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LibreGlucoseWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LibreGlucoseWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidget.LibreGlucoseWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AAEBF10290E7B64001068B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LibreGlucoseWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9APWNBUWJA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LibreGlucoseWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LibreGlucoseWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidget.LibreGlucoseWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		603791E558FBC673093537DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LibreWidget/LibreWidget.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LibreWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 9APWNBUWJA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LibreWidget/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6037935C5DE83514D79F6515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LibreWidget.app/LibreWidget";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9APWNBUWJA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		6037939EFF1205FBBC312B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		603794FB5A46FD2757B95BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9APWNBUWJA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LibreWidget;
+			};
+			name = Debug;
+		};
+		60379A1D6FBD12776127FA77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60379BCE5218EB95A641FE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LibreWidget.app/LibreWidget";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9APWNBUWJA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		60379BFF89B04C5AB2A5FA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LibreWidget/LibreWidget.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LibreWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 9APWNBUWJA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LibreWidget/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60379E298754AA2E525BA89F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9APWNBUWJA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LibreWidget;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AAEBF0E290E7B64001068B2 /* Build configuration list for PBXNativeTarget "LibreGlucoseWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAEBF0F290E7B64001068B2 /* Debug */,
+				1AAEBF10290E7B64001068B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6037955FA1C3AE524CE0210C /* Build configuration list for PBXNativeTarget "LibreWidgetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				603794FB5A46FD2757B95BD9 /* Debug */,
+				60379E298754AA2E525BA89F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60379B8663C92E813BB9A6A1 /* Build configuration list for PBXProject "LibreWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60379A1D6FBD12776127FA77 /* Debug */,
+				6037939EFF1205FBBC312B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60379BE8D22A34B90A95EC7D /* Build configuration list for PBXNativeTarget "LibreWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60379BCE5218EB95A641FE8A /* Debug */,
+				6037935C5DE83514D79F6515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60379F6578F0E4DD4EA9192B /* Build configuration list for PBXNativeTarget "LibreWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				603791E558FBC673093537DD /* Debug */,
+				60379BFF89B04C5AB2A5FA59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60379C49143A04A4D5249524 /* Project object */;
+}

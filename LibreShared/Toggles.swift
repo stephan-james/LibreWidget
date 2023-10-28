@@ -1,3 +1,3 @@
 import Foundation
 
-let DEMO = true
+let DEMO = false

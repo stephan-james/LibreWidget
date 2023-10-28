@@ -55,18 +55,18 @@ struct LibreGlucoseWidgetEntryView: View {
             return ""
         }
         switch entry.direction {
-            case .rapidlyIncreasing:
-                return "↑"
-            case .increasing:
-                return "↗"
-            case .steady:
-                return "→"
-            case .decreasing:
-                return "↘"
-            case .rapidlyDecreasing:
-                return "↓"
-            case .unknown:
-                return ""
+        case .rapidlyIncreasing:
+            return "↑"
+        case .increasing:
+            return "↗"
+        case .steady:
+            return "→"
+        case .decreasing:
+            return "↘"
+        case .rapidlyDecreasing:
+            return "↓"
+        case .unknown:
+            return ""
         }
     }
 
@@ -85,78 +85,85 @@ struct LibreGlucoseWidgetEntryView: View {
             return (.lwUnknown, .black)
         }
         switch entry.location {
-            case .regular:
-                return (.lwGreen, .black)
-            case .outranged:
-                return (.lwYellow, .black)
-            case .high:
-                return (.lwOrange, .white)
-            case .low:
-                return (.lwRed, .white)
-            default:
-                return (.lwUnknown, .black)
+        case .regular:
+            return (.lwGreen, .black)
+        case .outranged:
+            return (.lwYellow, .black)
+        case .high:
+            return (.lwOrange, .white)
+        case .low:
+            return (.lwRed, .white)
+        default:
+            return (.lwUnknown, .black)
         }
     }
 
     @ViewBuilder
     var body: some View {
         switch family {
-            case .systemSmall:
-                ZStack {
-                    color.0
-                    VStack(alignment: .center, spacing: -6) {
-                        Text(verbatim: direction)
-                                .font(.system(size: 48, weight: .heavy, design: .monospaced))
-                                .foregroundColor(color.1)
-                        Text(verbatim: glucose)
-                                .font(.system(size: 52, weight: .heavy))
-                                .foregroundColor(color.1)
-                    }
+        case .systemSmall:
+            ZStack {
+                color.0
+                VStack(alignment: .center, spacing: -6) {
+                    Text(verbatim: direction)
+                            .font(.system(size: 48, weight: .heavy, design: .monospaced))
+                            .foregroundColor(color.1)
+                    Text(verbatim: glucose)
+                            .font(.system(size: 52, weight: .heavy))
+                            .foregroundColor(color.1)
                 }
-            case .accessoryCircular:
-                ZStack(alignment: .center) {
+            }
+                    .widgetBackground(backgroundView: Color.clear)
+        case .accessoryCircular:
+            ZStack(alignment: .center) {
+                if #available(iOSApplicationExtension 17.0, *) {
+                    // TODO
+                } else {
                     Color(.white)
-                    VStack(alignment: .center, spacing: -6) {
-                        Text(verbatim: direction)
-                                .font(.system(size: 20, weight: .heavy, design: .monospaced))
-                                .colorInvert()
-                        Text(verbatim: glucose)
-                                .font(.system(size: 20, weight: .heavy))
-                                .colorInvert()
-                        Text(verbatim: " ")
-                                .font(.system(size: 10, weight: .heavy))
-                                .colorInvert()
-                    }
                 }
-            default:
-                VStack(alignment: .center) {
-                    Text("username=\(appConfiguration.username)")
-                    Text("\(appConfiguration.connected)" as String)
-                    Text("\(entry)" as String)
-                            .font(.system(size: 10))
-                    Text("\(entry.date.localizedTime())")
-                            .font(.system(size: 10))
-                    ZStack {
-                        Color.lwOrange
-                        Text("ORANGE")
-                    }
-                    ZStack {
-                        Color.lwYellow
-                        Text("YELLOW")
-                    }
-                    ZStack {
-                        Color.lwGreen
-                        Text("GREEN")
-                    }
-                    ZStack {
-                        Color.lwRed
-                        Text("RED")
-                    }
-                    ZStack {
-                        Color.lwUnknown
-                        Text("UNKNOWN")
-                    }
+                VStack(alignment: .center, spacing: -6) {
+                    Text(verbatim: direction)
+                            .font(.system(size: 20, weight: .heavy, design: .monospaced))
+                            .colorInvert()
+                    Text(verbatim: glucose)
+                            .font(.system(size: 20, weight: .heavy))
+                            .colorInvert()
+                    Text(verbatim: " ")
+                            .font(.system(size: 10, weight: .heavy))
+                            .colorInvert()
                 }
+            }
+                    .widgetBackground(backgroundView: EmptyView())
+        default:
+            VStack(alignment: .center) {
+                Text("username=\(appConfiguration.username)")
+                Text("\(appConfiguration.connected)" as String)
+                Text("\(entry)" as String)
+                        .font(.system(size: 10))
+                Text("\(entry.date.localizedTime())")
+                        .font(.system(size: 10))
+                ZStack {
+                    Color.lwOrange
+                    Text("ORANGE")
+                }
+                ZStack {
+                    Color.lwYellow
+                    Text("YELLOW")
+                }
+                ZStack {
+                    Color.lwGreen
+                    Text("GREEN")
+                }
+                ZStack {
+                    Color.lwRed
+                    Text("RED")
+                }
+                ZStack {
+                    Color.lwUnknown
+                    Text("UNKNOWN")
+                }
+            }
+                    .widgetBackground(backgroundView: Color.clear)
         }
     }
 }
@@ -170,10 +177,12 @@ struct LibreGlucoseWidget: Widget {
                 intent: ConfigurationIntent.self,
                 provider: Provider()) { entry in
             LibreGlucoseWidgetEntryView(entry: entry)
-        }.supportedFamilies([.accessoryCircular, .systemSmall] +
-                            (DEMO ? [.systemExtraLarge, .systemLarge, .systemMedium] : []))
-         .configurationDisplayName("Libre Glucose Widget")
-         .description("This is a personal widget.")
+        }
+                .supportedFamilies([.accessoryCircular, .systemSmall] +
+                        (DEMO ? [.systemExtraLarge, .systemLarge, .systemMedium] : []))
+                .configurationDisplayName("Libre Glucose Widget")
+                .description("This is a personal widget.")
+                .contentMarginsDisabled()
     }
 }
 

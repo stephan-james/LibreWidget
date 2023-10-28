@@ -23,17 +23,3 @@ extension Font {
     static let customFont = Font(UIFont(name: "Brygada1918Italic-SemiBold", size: 36)!)
 
 }
-
-extension View {
-
-    func widgetBackground(backgroundView: some View) -> some View {
-        if #available(iOSApplicationExtension 17.0, *) {
-            return containerBackground(for: .widget) {
-                backgroundView
-            }
-        } else {
-            return background(backgroundView)
-        }
-    }
-
-}

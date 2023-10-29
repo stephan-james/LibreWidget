@@ -119,7 +119,7 @@ class DefaultLibreViewAPI: LibreViewAPI {
         var urlRequest = URLRequest(url: url)
         urlRequest.timeoutInterval = 15
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        urlRequest.addValue("4.2.0", forHTTPHeaderField: "version")
+        urlRequest.addValue("4.7.0", forHTTPHeaderField: "version")
         urlRequest.addValue("llu.ios", forHTTPHeaderField: "product")
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         return urlRequest

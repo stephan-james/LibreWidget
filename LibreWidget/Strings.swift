@@ -72,4 +72,79 @@ struct Strings {
             String(localized: "connection.locked")
         }
     }
+    static var carbos: String {
+        get {
+            String(localized: "carbos")
+        }
+    }
+    static var insulin: String {
+        get {
+            String(localized: "insulin")
+        }
+    }
+    static var activity: String {
+        get {
+            String(localized: "activity")
+        }
+    }
+    static var minutes: String {
+        get {
+            String(localized: "minutes")
+        }
+    }
+    static var low: String {
+        get {
+            String(localized: "low")
+        }
+    }
+    static var regular: String {
+        get {
+            String(localized: "regular")
+        }
+    }
+    static var high: String {
+        get {
+            String(localized: "high")
+        }
+    }
+    static var bolus: String {
+        get {
+            String(localized: "bolus")
+        }
+    }
+    static var base: String {
+        get {
+            String(localized: "base")
+        }
+    }
+    static var save: String {
+        get {
+            String(localized: "save")
+        }
+    }
+    static var newEntry: String {
+        get {
+            String(localized: "newEntry")
+        }
+    }
+    static var loading: String {
+        get {
+            String(localized: "loading")
+        }
+    }
+    static var suggestCarbos: String {
+        get {
+            String(localized: "suggestCarbos")
+        }
+    }
+    static var suggestBolus: String {
+        get {
+            String(localized: "suggestBolus")
+        }
+    }
+    static var correctionUnnecessary: String {
+        get {
+            String(localized: "correctionUnnecessary")
+        }
+    }
 }

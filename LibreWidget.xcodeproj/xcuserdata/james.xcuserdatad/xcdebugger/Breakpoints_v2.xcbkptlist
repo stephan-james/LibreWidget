@@ -14,8 +14,8 @@
             filePath = "LibreGlucoseWidget/LibreGlucoseWidget.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "LibreGlucoseWidget/LibreGlucoseWidget.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "LibreGlucoseWidget/LibreGlucoseWidget.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "LibreGlucoseWidget/LibreGlucoseWidget.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "LibreGlucoseWidget/LibreGlucoseWidget.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -125,54 +125,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "201"
-            endingLineNumber = "201">
-            <Locations>
-               <Location
-                  uuid = "D579F5B7-21D4-4852-B1C0-AFC069A48200 - 71ce952ff6a2a7a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in LibreWidget.DefaultLibreViewAPI.fetchCurrentGlucoseEntryUnauthorized(completion: (Swift.Optional&lt;LibreWidget.GlucoseItem&gt;, Swift.Optional&lt;Any&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "LibreWidget"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/james/dev/LibreWidget/LibreWidget/LibreShared/LibreViewAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "220">
-               </Location>
-               <Location
-                  uuid = "D579F5B7-21D4-4852-B1C0-AFC069A48200 - 71ce952ff6a2a7a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in LibreWidget.DefaultLibreViewAPI.fetchCurrentGlucoseEntryUnauthorized(completion: (Swift.Optional&lt;LibreWidget.GlucoseItem&gt;, Swift.Optional&lt;Any&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "LibreWidget"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/james/dev/LibreWidget/LibreWidget/LibreShared/LibreViewAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "1012">
-               </Location>
-               <Location
-                  uuid = "D579F5B7-21D4-4852-B1C0-AFC069A48200 - 71ce952ff6a2a7a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in LibreWidget.DefaultLibreViewAPI.fetchCurrentGlucoseEntryUnauthorized(completion: (Swift.Optional&lt;LibreWidget.GlucoseItem&gt;, Swift.Optional&lt;Any&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "LibreWidget"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/james/dev/LibreWidget/LibreWidget/LibreShared/LibreViewAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "1032">
-               </Location>
-            </Locations>
+            endingLineNumber = "201"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -187,55 +142,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "166"
             endingLineNumber = "166"
-            landmarkName = "fetchCurrentGlucoseEntryUnauthorized(completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A28C099F-066A-474B-B4E3-607E65739EE0 - 7f7fe6f91abf2af0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in LibreWidget.DefaultLibreViewAPI.fetchCurrentGlucoseEntryAuthorized(completion: (Swift.Optional&lt;LibreWidget.GlucoseItem&gt;, Swift.Optional&lt;Any&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "LibreWidget"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/james/dev/LibreWidget/LibreWidget/LibreShared/LibreViewAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142"
-                  offsetFromSymbolStart = "256">
-               </Location>
-               <Location
-                  uuid = "A28C099F-066A-474B-B4E3-607E65739EE0 - 7f7fe6f91abf2af0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in LibreWidget.DefaultLibreViewAPI.fetchCurrentGlucoseEntryAuthorized(completion: (Swift.Optional&lt;LibreWidget.GlucoseItem&gt;, Swift.Optional&lt;Any&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "LibreWidget"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/james/dev/LibreWidget/LibreWidget/LibreShared/LibreViewAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142"
-                  offsetFromSymbolStart = "1644">
-               </Location>
-               <Location
-                  uuid = "A28C099F-066A-474B-B4E3-607E65739EE0 - 7f7fe6f91abf2af0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in LibreWidget.DefaultLibreViewAPI.fetchCurrentGlucoseEntryAuthorized(completion: (Swift.Optional&lt;LibreWidget.GlucoseItem&gt;, Swift.Optional&lt;Any&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "LibreWidget"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/james/dev/LibreWidget/LibreWidget/LibreShared/LibreViewAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142"
-                  offsetFromSymbolStart = "1664">
-               </Location>
-            </Locations>
+            landmarkName = "DefaultLibreViewAPI"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -248,8 +156,8 @@
             filePath = "LibreWidget/LibreWidgetSetupView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -296,8 +204,8 @@
             filePath = "LibreWidget/LibreWidgetSetupView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -312,8 +220,40 @@
             filePath = "LibreWidget/LibreWidgetSetupView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC434E6F-7C7B-426E-9F32-2CC13A646EF7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LibreWidget/LibreWidgetSetupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9ED78963-3480-4FBF-BF43-EA8449797301"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LibreWidget/LibreWidgetSetupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>

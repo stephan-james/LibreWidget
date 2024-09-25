@@ -60,15 +60,6 @@
             ReferencedContainer = "container:LibreWidget.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1AAEBEFB290E7B62001068B2"
-            BuildableName = "LibreGlucoseWidgetExtension.appex"
-            BlueprintName = "LibreGlucoseWidgetExtension"
-            ReferencedContainer = "container:LibreWidget.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <LocationScenarioReference
          identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
          referenceType = "1">

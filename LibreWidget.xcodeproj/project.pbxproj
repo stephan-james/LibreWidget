@@ -3,17 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1A0CD983290F24BD00CADD69 /* LibreWidgetSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A123D2D290F20C500F36374 /* LibreWidgetSetupView.swift */; };
 		1A0CD986290F328E00CADD69 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CD985290F328E00CADD69 /* Configuration.swift */; };
+		1A3350AE2B8F32D3009BC05D /* EventAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3350AD2B8F32D3009BC05D /* EventAPI.swift */; };
+		1A3350AF2B8F32D3009BC05D /* EventAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3350AD2B8F32D3009BC05D /* EventAPI.swift */; };
+		1A3F1FFB2B8E687000990549 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F1FFA2B8E687000990549 /* EventView.swift */; };
 		1A43EE812912E88900505558 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A43EE832912E88900505558 /* Localizable.strings */; };
 		1AA70D49291035430072D119 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CD985290F328E00CADD69 /* Configuration.swift */; };
 		1AA70D4B291067640072D119 /* LibreViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4A291067640072D119 /* LibreViewAPI.swift */; };
 		1AA70D4C291067640072D119 /* LibreViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4A291067640072D119 /* LibreViewAPI.swift */; };
-		1AA70D4E291067C50072D119 /* GlucoseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4D291067C50072D119 /* GlucoseEntry.swift */; };
+		1AA70D4E291067C50072D119 /* GlucoseTimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4D291067C50072D119 /* GlucoseTimelineEntry.swift */; };
 		1AA70D50291072DC0072D119 /* CommonsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4F291072DC0072D119 /* CommonsUI.swift */; };
 		1AA70D51291072DC0072D119 /* CommonsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70D4F291072DC0072D119 /* CommonsUI.swift */; };
 		1AAEBEFF290E7B63001068B2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAEBEFE290E7B62001068B2 /* WidgetKit.framework */; };
@@ -27,6 +30,7 @@
 		1ACD511829114F91000DFEE5 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD511629114F91000DFEE5 /* Commons.swift */; };
 		1ACD511C291155B3000DFEE5 /* Brygada1918-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ACD511A291155B3000DFEE5 /* Brygada1918-Italic-VariableFont_wght.ttf */; };
 		1ACD511D291155B3000DFEE5 /* Brygada1918-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ACD511B291155B3000DFEE5 /* Brygada1918-VariableFont_wght.ttf */; };
+		603790BDAD50D805BA4ECC91 /* GlucoseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60379EE88CC37F0056C5DA9F /* GlucoseEntry.swift */; };
 		603791D83DDA6FC1E413C54E /* LibreWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037963A4C91319AA20D0D0C /* LibreWidgetTests.swift */; };
 		603795AD477D903D6DB02C4C /* LibreWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60379CA6D6C1A21D93A294CF /* LibreWidgetApp.swift */; };
 		6037963951D1938C481BC00D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60379A1C52EDB40620493E12 /* Preview Assets.xcassets */; };
@@ -36,6 +40,7 @@
 		60379CDEE5ADF0D8473665C6 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60379CC26ECE138C19B0C7BA /* Strings.swift */; };
 		60379D966F99C9E47F8BA842 /* LibreWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60379B56D3AF213B9416423C /* LibreWidgetUITestsLaunchTests.swift */; };
 		60379E81883591F908323F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60379F7810A23AC530DC9850 /* Assets.xcassets */; };
+		60379F20FD250B54DC970BC2 /* ict.json in Resources */ = {isa = PBXBuildFile; fileRef = 60379BF842CBD68DC6DD4E1D /* ict.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,10 +87,12 @@
 		1A0CD988290F35B400CADD69 /* LibreGlucoseWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LibreGlucoseWidgetExtension.entitlements; sourceTree = "<group>"; };
 		1A123D2D290F20C500F36374 /* LibreWidgetSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LibreWidgetSetupView.swift; path = LibreWidget/LibreWidgetSetupView.swift; sourceTree = SOURCE_ROOT; };
 		1A264E40290C655100520490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A3350AD2B8F32D3009BC05D /* EventAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPI.swift; sourceTree = "<group>"; };
+		1A3F1FFA2B8E687000990549 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		1A43EE822912E88900505558 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1A43EE842912E89100505558 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1AA70D4A291067640072D119 /* LibreViewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibreViewAPI.swift; sourceTree = "<group>"; };
-		1AA70D4D291067C50072D119 /* GlucoseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseEntry.swift; sourceTree = "<group>"; };
+		1AA70D4D291067C50072D119 /* GlucoseTimelineEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseTimelineEntry.swift; sourceTree = "<group>"; };
 		1AA70D4F291072DC0072D119 /* CommonsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonsUI.swift; sourceTree = "<group>"; };
 		1AAEBEFC290E7B62001068B2 /* LibreGlucoseWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LibreGlucoseWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAEBEFE290E7B62001068B2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -102,10 +109,12 @@
 		603797CD002C11AC46FD1E24 /* LibreWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibreWidgetUITests.swift; sourceTree = "<group>"; };
 		60379A1C52EDB40620493E12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		60379B56D3AF213B9416423C /* LibreWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibreWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		60379BF842CBD68DC6DD4E1D /* ict.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ict.json; sourceTree = "<group>"; };
 		60379C7F64077E0CF567850C /* Toggles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toggles.swift; sourceTree = "<group>"; };
 		60379CA6D6C1A21D93A294CF /* LibreWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibreWidgetApp.swift; sourceTree = "<group>"; };
 		60379CBB8919B0F021349625 /* LibreWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibreWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60379CC26ECE138C19B0C7BA /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		60379EE88CC37F0056C5DA9F /* GlucoseEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlucoseEntry.swift; sourceTree = "<group>"; };
 		60379F25CCB4C14E6E90569F /* LibreWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibreWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60379F7810A23AC530DC9850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,9 +158,11 @@
 			children = (
 				1A0CD985290F328E00CADD69 /* Configuration.swift */,
 				1AA70D4A291067640072D119 /* LibreViewAPI.swift */,
+				1A3350AD2B8F32D3009BC05D /* EventAPI.swift */,
 				1AA70D4F291072DC0072D119 /* CommonsUI.swift */,
 				1ACD511629114F91000DFEE5 /* Commons.swift */,
 				60379C7F64077E0CF567850C /* Toggles.swift */,
+				60379EE88CC37F0056C5DA9F /* GlucoseEntry.swift */,
 			);
 			path = LibreShared;
 			sourceTree = "<group>";
@@ -168,7 +179,7 @@
 		1AAEBF02290E7B63001068B2 /* LibreGlucoseWidget */ = {
 			isa = PBXGroup;
 			children = (
-				1AA70D4D291067C50072D119 /* GlucoseEntry.swift */,
+				1AA70D4D291067C50072D119 /* GlucoseTimelineEntry.swift */,
 				1AAEBF03290E7B63001068B2 /* LibreGlucoseWidget.swift */,
 				1AAEBF05290E7B63001068B2 /* LibreGlucoseWidget.intentdefinition */,
 				1AAEBF06290E7B64001068B2 /* Assets.xcassets */,
@@ -205,6 +216,7 @@
 				60379C7EADF9B98469ABEC3D /* LibreWidgetUITests */,
 				1AAEBEFD290E7B62001068B2 /* Frameworks */,
 				60379EC30306D0C4B6D1430A /* Products */,
+				60379BF842CBD68DC6DD4E1D /* ict.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +247,7 @@
 				60379BB0A1B16AC86A347BAF /* Preview Content */,
 				60379CA6D6C1A21D93A294CF /* LibreWidgetApp.swift */,
 				1A123D2D290F20C500F36374 /* LibreWidgetSetupView.swift */,
+				1A3F1FFA2B8E687000990549 /* EventView.swift */,
 				60379CC26ECE138C19B0C7BA /* Strings.swift */,
 				1A43EE832912E88900505558 /* Localizable.strings */,
 			);
@@ -342,7 +355,7 @@
 				};
 			};
 			buildConfigurationList = 60379B8663C92E813BB9A6A1 /* Build configuration list for PBXProject "LibreWidget" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -395,6 +408,7 @@
 				60379E81883591F908323F6B /* Assets.xcassets in Resources */,
 				6037963951D1938C481BC00D /* Preview Assets.xcassets in Resources */,
 				1ACD511D291155B3000DFEE5 /* Brygada1918-VariableFont_wght.ttf in Resources */,
+				60379F20FD250B54DC970BC2 /* ict.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,10 +419,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3350AF2B8F32D3009BC05D /* EventAPI.swift in Sources */,
 				1ACD511829114F91000DFEE5 /* Commons.swift in Sources */,
 				1AA70D4C291067640072D119 /* LibreViewAPI.swift in Sources */,
 				1AAEBF09290E7B64001068B2 /* LibreGlucoseWidget.intentdefinition in Sources */,
-				1AA70D4E291067C50072D119 /* GlucoseEntry.swift in Sources */,
+				1AA70D4E291067C50072D119 /* GlucoseTimelineEntry.swift in Sources */,
 				1AAEBF04290E7B63001068B2 /* LibreGlucoseWidget.swift in Sources */,
 				1AA70D51291072DC0072D119 /* CommonsUI.swift in Sources */,
 				1AA70D49291035430072D119 /* Configuration.swift in Sources */,
@@ -446,6 +461,9 @@
 				603795AD477D903D6DB02C4C /* LibreWidgetApp.swift in Sources */,
 				60379CDEE5ADF0D8473665C6 /* Strings.swift in Sources */,
 				60379A1A306958A6214015EB /* Toggles.swift in Sources */,
+				1A3350AE2B8F32D3009BC05D /* EventAPI.swift in Sources */,
+				1A3F1FFB2B8E687000990549 /* EventView.swift in Sources */,
+				603790BDAD50D805BA4ECC91 /* GlucoseEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +519,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidget.LibreGlucoseWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames2.LibreWidget.LibreGlucoseWidget2024;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -529,7 +547,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidget.LibreGlucoseWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames2.LibreWidget.LibreGlucoseWidget2024;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -562,7 +580,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames2.LibreWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -578,7 +596,7 @@
 				DEVELOPMENT_TEAM = 9APWNBUWJA;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidgetTests;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames2.LibreWidgetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -649,7 +667,7 @@
 				DEVELOPMENT_TEAM = 9APWNBUWJA;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidgetUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames2.LibreWidgetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -727,7 +745,7 @@
 				DEVELOPMENT_TEAM = 9APWNBUWJA;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidgetTests;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames2.LibreWidgetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -760,7 +778,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames2.LibreWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -775,7 +793,7 @@
 				DEVELOPMENT_TEAM = 9APWNBUWJA;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = stephanjames.LibreWidgetUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = stephanjames2.LibreWidgetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

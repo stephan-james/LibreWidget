@@ -1,7 +1,7 @@
 import Foundation
 
 extension UserDefaults {
-    static let group = UserDefaults(suiteName: "group.stephanjames")!
+    static let group = UserDefaults(suiteName: "group.stephanjames2")!
 }
 
 enum Connection: Int {

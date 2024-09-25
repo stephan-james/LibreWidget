@@ -1,0 +1,182 @@
+{
+  "_id": "ict",
+  "factors": {
+    "bolusByDirection": [
+      "decreasing",
+      "increasing",
+      "rapidlyDecreasing",
+      "rapidlyIncreasing",
+      "steady",
+      "unknown",
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "carbosByDirection": [
+      "decreasing",
+      "increasing",
+      "rapidlyDecreasing",
+      "rapidlyIncreasing",
+      "steady",
+      "unknown",
+      0.4,
+      0.8,
+      1,
+      1,
+      1.2,
+      1.6
+    ]
+  },
+  "limits": {
+    "activityTime": {
+      "max": 180,
+      "min": 0,
+      "step": 5
+    },
+    "base": {
+      "max": 10,
+      "min": 0,
+      "step": 1
+    },
+    "bloodglucose": {
+      "max": 140,
+      "min": 80,
+      "step": 0
+    },
+    "bolus": {
+      "max": 12,
+      "min": 0,
+      "step": 1
+    },
+    "carbos": {
+      "max": 12,
+      "min": 0,
+      "step": 0.25
+    }
+  },
+  "suggestions": {
+    "0": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1
+    },
+    "1": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1
+    },
+    "2": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1
+    },
+    "3": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1
+    },
+    "4": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1
+    },
+    "5": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.1
+    },
+    "6": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.2
+    },
+    "7": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 35,
+      "iePerCarbo": 1.3
+    },
+    "8": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 35,
+      "iePerCarbo": 1.3
+    },
+    "9": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 40,
+      "iePerCarbo": 1.4
+    },
+    "10": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 50,
+      "iePerCarbo": 1.4
+    },
+    "11": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.55
+    },
+    "12": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.5
+    },
+    "13": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.4
+    },
+    "14": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.2
+    },
+    "15": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1
+    },
+    "16": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.2
+    },
+    "17": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.25
+    },
+    "18": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.4
+    },
+    "19": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 40,
+      "iePerCarbo": 1.6
+    },
+    "20": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.6
+    },
+    "21": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.6
+    },
+    "22": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.6
+    },
+    "23": {
+      "bloodglucosePerCarbo": 31,
+      "bloodglucosePerIe": 31,
+      "iePerCarbo": 1.6
+    }
+  }
+}

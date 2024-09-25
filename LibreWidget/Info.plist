@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>BGTaskSchedulerPermittedIdentifiers</key>
-        <array>
-            <string>sjd.librewidget.fetcher</string>
-        </array>
-        <key>UIAppFonts</key>
-        <array>
-            <string>Brygada1918-Italic-VariableFont_wght.ttf</string>
-        </array>
-        <key>UIBackgroundModes</key>
-        <array>
-            <string>fetch</string>
-        </array>
-    </dict>
+<dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>sjd.librewidget.fetcher</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>silicon.fritz.box</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Brygada1918-Italic-VariableFont_wght.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>processing</string>
+	</array>
+</dict>
 </plist>

@@ -21,12 +21,12 @@ extension View {
 
 struct Provider: IntentTimelineProvider {
 
-    func placeholder(in context: Context) -> GlucoseEntry {
-        GlucoseEntry.defaultEntry()
+    func placeholder(in context: Context) -> GlucoseTimelineEntry {
+        GlucoseTimelineEntry.defaultEntry()
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (GlucoseEntry) -> ()) {
-        completion(GlucoseEntry.defaultEntry())
+    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (GlucoseTimelineEntry) -> ()) {
+        completion(GlucoseTimelineEntry.defaultEntry())
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
@@ -44,17 +44,18 @@ struct Provider: IntentTimelineProvider {
         }
     }
 
-    private func createTimeline(glucoseItem: GlucoseItem, configuration: ConfigurationIntent) -> Timeline<GlucoseEntry> {
+    private func createTimeline(glucoseItem: GlucoseItem, configuration: ConfigurationIntent) -> Timeline<GlucoseTimelineEntry> {
         guard !glucoseItem.isOutdated() else {
             return createTimeline(glucoseItem: GlucoseItem.unspecific, configuration: configuration)
         }
         let entries = [0, 1, 2].map { minuteOffset in
-            GlucoseEntry(
+            let ge = SimpleGlucoseEntry.fromGlucoseItem(glucoseItem)
+            return GlucoseTimelineEntry(
                     date: Calendar.current.date(byAdding: .minute, value: minuteOffset, to: Date())!,
-                    glucose: Float(glucoseItem.value ?? GlucoseItem.unspecific.value!),
-                    unit: glucoseItem.value == glucoseItem.valueInMgPerDL ? .mgDl : .mmol,
-                    direction: Direction.byTrendArrow(glucoseItem.trendArrow ?? GlucoseItem.unspecific.trendArrow!),
-                    location: Location.byMeasurementColor(glucoseItem.measurementColor ?? GlucoseItem.unspecific.measurementColor!),
+                    glucose: ge.glucose,
+                    unit: ge.unit,
+                    direction: ge.direction,
+                    location: ge.location,
                     configuration: configuration)
         }
         return Timeline(entries: entries, policy: .atEnd)
@@ -67,51 +68,15 @@ struct LibreGlucoseWidgetEntryView: View {
     @Environment(\.widgetFamily) private var family
 
     var direction: String {
-        if entry.glucose == 0 {
-            return ""
-        }
-        switch entry.direction {
-        case .rapidlyIncreasing:
-            return "↑"
-        case .increasing:
-            return "↗"
-        case .steady:
-            return "→"
-        case .decreasing:
-            return "↘"
-        case .rapidlyDecreasing:
-            return "↓"
-        case .unknown:
-            return ""
-        }
+     entry.directionAsText()
     }
 
     var glucose: String {
-        if entry.glucose <= 0 {
-            return "--"
-        } else if entry.unit == .mgDl {
-            return "\(Int(entry.glucose))"
-        } else {
-            return String(format: "%.1f", entry.glucose)
-        }
+     entry.glucoseAsText()
     }
 
     var color: (Color, Color) {
-        if entry.glucose == 0 {
-            return (.lwUnknown, .black)
-        }
-        switch entry.location {
-        case .regular:
-            return (.lwGreen, .black)
-        case .outranged:
-            return (.lwYellow, .black)
-        case .high:
-            return (.lwOrange, .white)
-        case .low:
-            return (.lwRed, .white)
-        default:
-            return (.lwUnknown, .black)
-        }
+     entry.glucoseAsColor()
     }
 
     @ViewBuilder
@@ -204,8 +169,8 @@ struct LibreGlucoseWidget: Widget {
 
 struct LibreGlucoseWidget_Previews: PreviewProvider {
 
-    static func exampleEntry(location: Location) -> GlucoseEntry {
-        GlucoseEntry(date: Date(), glucose: 185, unit: .mgDl, direction: Direction.steady, location: location, configuration: ConfigurationIntent())
+    static func exampleEntry(location: Location) -> GlucoseTimelineEntry {
+        GlucoseTimelineEntry(date: Date(), glucose: 185, unit: .mgDl, direction: Direction.steady, location: location, configuration: ConfigurationIntent())
     }
 
     static var previews: some View {

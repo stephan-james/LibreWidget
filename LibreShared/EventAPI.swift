@@ -142,10 +142,10 @@ let ictEventAPIConfigurationLocal = IctEventAPIConfiguration(
 )
 
 let ictEventAPIConfigurationFovea = IctEventAPIConfiguration(
-        url: "https://fovea.de:1443/couche-db",
+        url: "https://couche-db",
         database: "events",
-        username: "RLTXTpqjmJIjq1it",
-        password: "cjKJHoPPjI3NPboQ"
+        username: "***",
+        password: "***"
 )
 
 let ictEventAPIConfiguration = ictEventAPIConfigurationFovea

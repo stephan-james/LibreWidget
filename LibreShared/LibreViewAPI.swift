@@ -1,4 +1,5 @@
 import Foundation
+import CryptoKit
 
 struct AuthRequest: Encodable {
     let email: String
@@ -11,8 +12,17 @@ struct AuthTicket: Decodable {
     let token: String
 }
 
+struct User: Decodable {
+    let id: String?
+    let firstName: String?
+    let lastName: String?
+    let email: String?
+    let country: String?
+}
+
 struct AuthData: Decodable {
     let authTicket: AuthTicket?
+    let user: User?
 }
 
 struct AuthResponse: Decodable {
@@ -107,6 +117,7 @@ class DefaultLibreViewAPI: LibreViewAPI {
 
     private var server = "https://api.libreview.io"
     private var accessToken = AccessToken.Empty
+    private var user: User?
 
     func resetAuthentication() {
         accessToken = AccessToken.Empty
@@ -116,13 +127,22 @@ class DefaultLibreViewAPI: LibreViewAPI {
         guard let url = URL(string: "\(server)\(path)") else {
             fatalError("Missing URL")
         }
+
         var urlRequest = URLRequest(url: url)
         urlRequest.timeoutInterval = 15
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        urlRequest.addValue("4.7.0", forHTTPHeaderField: "version")
+        urlRequest.addValue("4.12.0", forHTTPHeaderField: "version")
         urlRequest.addValue("llu.ios", forHTTPHeaderField: "product")
-        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        if let userId = user?.id {
+            urlRequest.addValue(calculateAccountId(userId), forHTTPHeaderField: "Account-Id")
+        }
+
         return urlRequest
+    }
+
+    private func calculateAccountId(_ userId: String) -> String {
+        return SHA256.hash(data: Data(userId.utf8)).compactMap { String(format: "%02x", $0) }.joined()
     }
 
     private func fetchRequest() -> URLRequest {
@@ -134,22 +154,23 @@ class DefaultLibreViewAPI: LibreViewAPI {
 
     private func fetchCurrentGlucoseEntryAuthorized(completion: @escaping (GlucoseItem?, Any?) -> ()) {
         URLSession.shared.dataTask(with: fetchRequest()) { (data, response, error) in
-                      if let data = data {
-                          do {
-                              let response = try JSONDecoder().decode(ConnectionsResponse.self, from: data)
-                              if let glucoseItem = response.data.first?.glucoseItem {
-                                  completion(glucoseItem, nil)
-                              } else {
-                                  completion(nil, "No glucose item found in response.")
-                              }
-                          } catch {
-                              completion(nil, error)
-                          }
-                      } else if let error = error {
-                          completion(nil, error)
-                      }
-                  }
-                  .resume()
+                    if let data = data {
+                        print(data)
+                        do {
+                            let response = try JSONDecoder().decode(ConnectionsResponse.self, from: data)
+                            if let glucoseItem = response.data.first?.glucoseItem {
+                                completion(glucoseItem, nil)
+                            } else {
+                                completion(nil, "No glucose item found in response.")
+                            }
+                        } catch {
+                            completion(nil, error)
+                        }
+                    } else if let error = error {
+                        completion(nil, error)
+                    }
+                }
+                .resume()
     }
 
     private func authorizationRequest() -> URLRequest {
@@ -166,24 +187,29 @@ class DefaultLibreViewAPI: LibreViewAPI {
 
     private func fetchCurrentGlucoseEntryUnauthorized(completion: @escaping (GlucoseItem?, Any?) -> ()) {
         URLSession.shared.dataTask(with: authorizationRequest()) { (data, response, error) in
-                      if let data = data {
-                          do {
-                              let response = try JSONDecoder().decode(AuthResponse.self, from: data)
-                              // TODO check status
-                              if let authTicket = response.data?.authTicket {
-                                  self.accessToken = AccessToken(token: authTicket.token, expiresAt: Date(timeIntervalSince1970: TimeInterval(authTicket.expires)))
-                                  self.fetchCurrentGlucoseEntryAuthorized(completion: completion)
-                              } else {
-                                  completion(nil, response.status)
-                              }
-                          } catch {
-                              completion(nil, error)
-                          }
-                      } else if let error = error {
-                          completion(nil, error)
-                      }
-                  }
-                  .resume()
+                    if let data = data {
+                        do {
+                            let response = try JSONDecoder().decode(AuthResponse.self, from: data)
+                            // TODO check status
+                            if let user = response.data?.user {
+                                self.user = user
+                            } else {
+                                completion(nil, response.status)
+                            }
+                            if let authTicket = response.data?.authTicket {
+                                self.accessToken = AccessToken(token: authTicket.token, expiresAt: Date(timeIntervalSince1970: TimeInterval(authTicket.expires)))
+                                self.fetchCurrentGlucoseEntryAuthorized(completion: completion)
+                            } else {
+                                completion(nil, response.status)
+                            }
+                        } catch {
+                            completion(nil, error)
+                        }
+                    } else if let error = error {
+                        completion(nil, error)
+                    }
+                }
+                .resume()
     }
 
     func fetchCurrentGlucoseEntry(completion: @escaping (GlucoseItem?, Any?) -> ()) {
